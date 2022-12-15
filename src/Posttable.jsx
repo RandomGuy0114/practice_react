@@ -42,6 +42,14 @@ function PostTable() {
   }
   
   function Time() {
+    const [clock, setClock] = useState()
+    
+    useEffect(() => {
+      setInterval(() => {
+        setClock(() => new Date().toLocaleTimeString())
+      }, 1000);
+    }, []);
+    
     const d = new Date();
     let time = d.toLocaleTimeString();
   
