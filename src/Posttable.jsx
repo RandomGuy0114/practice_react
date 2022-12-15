@@ -25,8 +25,8 @@ function PostTable() {
 
   function UserInfo() {
     const [user, setUser] = useState({
-      name:"Mike Denum",
-      email:"mtd@gmail.com",
+      name:"WD29 Group7",
+      email:"group7@gmail.com",
       bio:"Passionate coder"
     });
   
