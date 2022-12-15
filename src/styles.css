@@ -11,3 +11,6 @@
   .column:first-child {
     flex-grow: 10;
   }
+  body{
+    overflow-x: hidden;
+  }

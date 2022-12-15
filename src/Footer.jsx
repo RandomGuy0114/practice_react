@@ -3,7 +3,7 @@ import React from 'react';
 function Footer() {
     return (
         <div>
-            <footer className="bg-info fixed-bottom text-center text-lg-start">
+            <footer className="bg-info text-center text-lg-start">
 
                 <div className="text-center p-3" >
                     © 2022 Copyright:

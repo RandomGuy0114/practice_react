@@ -11,7 +11,7 @@ function Posttable() {
   }, []);
 
   return (
-    <div className="card-deck overflow-auto  " style={{ height: '40%' }}>
+    <div className="card-deck  overflow-auto pt-2 " style={{ height: '100%' }}>
       {posts.map(post => (
         <div className="card m-4" key={post.id}>
           <div className="card-body">
