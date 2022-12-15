@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-function Posttable() {
+function PostTable() {
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
@@ -22,4 +22,40 @@ function Posttable() {
       ))}
     </div>
   );}
-export default Posttable
+
+  function UserInfo() {
+    const [user, setUser] = useState({
+      name:"Mike Denum",
+      email:"mtd@gmail.com",
+      bio:"Passionate coder"
+    });
+  
+    return (
+      <div className="col mx-2 p-2 my-4">
+        <div className="card mx-4 p-4">
+          <p>Name: {user.name}</p>
+          <p>Email: {user.email}</p>
+          <p>Bio: {user.bio}</p>
+        </div>
+      </div>
+    );
+  }
+  
+  function Time() {
+    const d = new Date();
+    let time = d.toLocaleTimeString();
+  
+    let date = d.toLocaleDateString('default', {year:"numeric", month:"long", day:"numeric"});
+    
+    return (
+      <div className="col mx-2 p-2 my-4">
+        <div class="card mx-4 p-4">
+          <p className="text-center">{time}</p>
+          <p className="text-center">{date}</p>
+        </div>
+      </div>
+    );
+  }
+    
+
+export {PostTable, UserInfo, Time};
