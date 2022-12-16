@@ -25,8 +25,8 @@ function PostTable() {
 
   function UserInfo() {
     const [user, setUser] = useState({
-      name:"Mike Denum",
-      email:"mtd@gmail.com",
+      name:"WD29 Group7",
+      email:"group7@gmail.com",
       bio:"Passionate coder"
     });
   
@@ -42,6 +42,14 @@ function PostTable() {
   }
   
   function Time() {
+    const [clock, setClock] = useState()
+    
+    useEffect(() => {
+      setInterval(() => {
+        setClock(() => new Date().toLocaleTimeString())
+      }, 1000);
+    }, []);
+    
     const d = new Date();
     let time = d.toLocaleTimeString();
   
