@@ -7,7 +7,7 @@ import './styles.css';
 function Home() {
   return (
     <div className='my-5 row justify-content-evenly' >
-      <div className='col-3 bg-danger' style={{ height: '500px' }}>
+      <div className='col-3 bg-secondary' style={{ height: '500px' }}>
         <UserInfo />
         <Time />
       </div>
